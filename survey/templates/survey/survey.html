@@ -8,23 +8,27 @@
 {% endblock %} {% block extra_title %}Survey{% endblock %}
 <!--  -->
 {% block content %}
-
-<div id="question">QUESTION GOES HERE</div>
-<div id="answers">
-  <button class="btn" value="1">
-    <i class="fa-solid fa-face-sad-cry"></i>
-  </button>
-  <button class="btn" value="2">
-    <i class="fa-regular fa-face-sad-tear"></i>
-  </button>
-  <button class="btn" value="3">
-    <i class="fa-regular fa-face-smile"></i>
-  </button>
-  <button class="btn" value="4">
-    <i class="fa-regular fa-face-grin-squint-tears"></i>
-  </button>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-9 survey-container">
+      <div class="col-12" id="question">QUESTION GOES HERE</div>
+      <div id="answers">
+        <button class="btn" value="1">
+          <i class="fa-solid fa-face-sad-cry"></i>
+        </button>
+        <button class="btn" value="2">
+          <i class="fa-regular fa-face-sad-tear"></i>
+        </button>
+        <button class="btn" value="3">
+          <i class="fa-regular fa-face-smile"></i>
+        </button>
+        <button class="btn" value="4">
+          <i class="fa-regular fa-face-grin-squint-tears"></i>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
-
 <form action="{% url 'survey' %}" method="POST">{{ form }}</form>
 
 {% endblock %} {% block postloadjs %} {{ block.super }}
