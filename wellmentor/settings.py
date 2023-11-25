@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'survey'
 ]
 
+LOGIN_REDIRECT_URL = '/profile'
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",

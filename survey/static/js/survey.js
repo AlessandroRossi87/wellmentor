@@ -24,8 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
   nextQuestion(DATA, TOTALINDEX);
 });
 
-function submitForm() {}
-
 async function nextQuestion(data, index) {
   if (data.length <= index) {
     document.getElementById("id_physical").value = SCORE.physical;
@@ -36,7 +34,6 @@ async function nextQuestion(data, index) {
     document.getElementById("id_anxiety").value = SCORE.anxiety;
     display.innerHTML = "";
     checkResultsBtn.classList.remove("hidden");
-    submitForm();
     return;
   }
 

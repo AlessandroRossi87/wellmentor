@@ -6,7 +6,7 @@ from .models import UserProfile
 # Create your views here.
 
 
-class HomePageView(LoginRequiredMixin, generic.DetailView):
+class ProfileView(LoginRequiredMixin, generic.DetailView):
     """BASIC VIEW FOR LISING ALL THE USER PROFILES ON THE ROOT PAGE"""
     model = UserProfile
     template_name = 'profiles/profile.html'
