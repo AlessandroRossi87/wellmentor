@@ -1,15 +1,24 @@
 /* STYLING THE SURVEY ELEMENTS */
 
-#question {
-  color: whitesmoke;
-  max-width: 450px;
-  background-color: rgba(12, 74, 110);
-  padding: 1rem;
-  border-radius: 25px;
-  margin: 10px;
+main {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%), url("../images/hero.jpeg") rgba(40, 40, 40, 0.5) fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-#question h2 {
+.survey-container {
+  background-color: rgba(205,42,81,0.75);
+  padding-bottom: 25px;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+#question {
+  color: #fac041;
+  padding: 1rem;
+  border-radius: 25px;
   line-height: 2ch;
   font-size: x-large;
   opacity: 0;
@@ -18,12 +27,16 @@
 }
 
 #answers button {
-  padding: 1rem;
-  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 5px auto;
+  width: 80%;
+  border: 1px solid #fac041;
+  background-color: #d9b888;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-  color: black;
-  font-size: 2rem;
+  color: #865527;
+  font-size: 1.5rem;
+  text-transform: capitalize;
 }
 
 #answers button:hover {
@@ -31,7 +44,7 @@
   filter: brightness(0.9);
 }
 
-#answers button:nth-child(1) {
+/* #answers button:nth-child(1) {
   background: var(--clr-red);
 }
 #answers button:nth-child(2) {
@@ -42,7 +55,7 @@
 }
 #answers button:nth-child(4) {
   background: var(--clr-green);
-}
+} */
 
 /* Animations */
 @keyframes fadeInUp {
