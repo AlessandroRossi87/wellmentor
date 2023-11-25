@@ -36,16 +36,19 @@ main {
 
 header {
   background-color: #fac041;
+  padding: 10px;
 }
 
 .navbar-brand img {
   width: 300px;
 }
 
-header * {
-  color: #865527;
-}
 
 .nav-link {
   color: #865527;
+}
+
+.nav-link:hover {
+  color: #865527;
+  font-weight: 600;
 }
