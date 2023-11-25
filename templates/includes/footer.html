@@ -1,12 +1,64 @@
 <!-- MODIFY THIS FOR Footer STYLING -->
+{% load static %} 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+{% endblock %}
 
 <footer>
-  <section class="footer">
-    <ul id="suggestion">
-      <li>Fb</li>
-      <li>Youtube</li>
-      <li>instagram</li>
-    </ul>
-  </section>
+  <div class="site-container">
+    <div class="footer-box">
+      <div class="footer-menu">
+        <ul>
+          <li><a href="{% url 'home' %}" aria-label="Home">Home</a></li>
+          {% if user.is_authenticated %}
+          <li>
+            <a href="{% url 'account_logout' %}" aria-label="Logout"
+              >Logout</a
+            >
+          </li>
+          <li>
+            <a href="{% url 'new_post' %}" aria-label="Post an Alert"
+              >Post an Alert</a
+            >
+          </li>
+          {% else %}
+          <li>
+            <a href="{% url 'account_signup' %}" aria-label="Register"
+              >Register</a
+            >
+          </li>
+          <li>
+            <a href="{% url 'account_login' %}" aria-label="Log in"
+              >Log in</a
+            >
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+      <div class="social-icons">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit our Facebook page (Opens in a new tab)"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit our Twitter page (Opens in a new tab)"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit our Instagram page (Opens in a new tab)"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </div>
+  </div>
 </footer>
 <!--add a links and I class -->

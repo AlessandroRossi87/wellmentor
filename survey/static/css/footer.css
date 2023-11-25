@@ -1,0 +1,29 @@
+footer {
+    background-color: #865527;
+    padding: 60px 0;
+    margin-top: 20px;
+}
+
+footer p,
+a {
+    color: #FAC041;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.social-icons i {
+    color: var(--secondary-color);
+    font-size: 16px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    padding: 8px;
+}
