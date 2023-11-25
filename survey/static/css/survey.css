@@ -44,19 +44,6 @@ main {
   filter: brightness(0.9);
 }
 
-/* #answers button:nth-child(1) {
-  background: var(--clr-red);
-}
-#answers button:nth-child(2) {
-  background: var(--clr-yellow);
-}
-#answers button:nth-child(3) {
-  background: var(--clr-blue);
-}
-#answers button:nth-child(4) {
-  background: var(--clr-green);
-} */
-
 /* Animations */
 @keyframes fadeInUp {
   to {

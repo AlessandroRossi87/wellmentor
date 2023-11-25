@@ -31,3 +31,21 @@ main {
   text-align: center;
   min-height: 100dvh;
 }
+
+/* navbar */
+
+header {
+  background-color: #fac041;
+}
+
+.navbar-brand img {
+  width: 300px;
+}
+
+header * {
+  color: #865527;
+}
+
+.nav-link {
+  color: #865527;
+}
